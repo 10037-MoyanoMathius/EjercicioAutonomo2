@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(255, 255, 255);
+    font-family: "Ubuntu", helvetica;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #1ab188;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+  }
+  
+  a:hover {
+    color: #179b76;
+  }
+  
+  .contenedor-formularios {
+    background: rgba(187, 207, 224, 0.7);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 4px 10px 4px rgba(19, 35, 47, 0.3);
+    box-shadow: 10px 10px 10px 10px rgba(81, 83, 85, 0.3);
+  }
+  
+  .contenedor-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+  .contenedor-tabs li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(157, 138, 138, 0.25);
+    color: #000000;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+  }
+  
+  .contenedor-tabs li a:hover {
+    background: #179b77;
+    color: #000000;
+  }
+  
+  .contenedor-tabs .active a {
+    background: #1ab188;
+    color: #000000;
+  }
+  
+  .contenido-tab > div:last-child {
+    display: none;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+  
+  label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+  }
+  
+  label .req {
+    margin: 2px;
+    color: #1ab188;
+  }
+  
+  label.active {
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+  }
+  
+  label.active .req {
+    opacity: 0;
+  }
+  
+  label.highlight {
+    color: #fff;
+  }
+  
+  input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 25px 0px 5px 20px;
+    background: none;
+    background-image: none;
+    border: 1px solid #242a29;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #000000;
+    border-radius: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #1ab188;
+  }
+  
+  .contenedor-input {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  
+  .button {
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: #ccff02;
+    color: #000000;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-appearance: none;
+  }
+  
+  .button:hover, .button:focus {
+    background: #179b77;
+  }
+  
+  .button-block {
+    display: block;
+    width: 100%;
+  }
+  
+  .forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .fila-arriba div {
+      width: 100%;
+    }
+    .fila-arriba div:last-child {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .contenedor-tabs li a {
+      width: 100%;
+    }
+  }
+  

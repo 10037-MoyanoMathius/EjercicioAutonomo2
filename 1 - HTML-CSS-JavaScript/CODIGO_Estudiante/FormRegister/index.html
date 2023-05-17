@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="/1 - HTML-CSS-JavaScript/CODIGO_Estudiante/FormRegister/css/styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action='#'>
+    <section class="box1">
+    <fieldset>
+        <h2>Dirección de envio</h2>
+            <label>Calle Principal: <input type="text" name="first-name" required /></label>
+            <label>Transversal: <input type="text" name="last-name" required /></label>
+            <input type="checkbox" id="miCasilla" class="check" onclick="actualizarBoton()">Entrega al propietario
+            <br>
+            <input type="checkbox" id="view" class="check" onclick="mostrarOcultarDiv()" >Entrega a un tercero 
+            <label>Provincias:</label>
+            <select name="" id="">
+                <option value="Azuay" selected="selected">Azuay</option>  
+                <option value="Cañar">Cañar</option>  
+                <option value="Loja">Loja</option>  
+                <option value="Carchi">Carchi</option>  
+                <option value="Imbabura">Imbabura</option>  
+                <option value="Pichincha">Pichincha</option>  
+                <option value="Cotopaxi">Cotopaxi</option>  
+                <option value="Tungurahua">Tungurahua</option>  
+                <option value="Bolívar">Bolívar</option>  
+                <option value="Chimborazo">Chimborazo</option>  
+                <option value="Sto. Domingo de los Tsachilas">Sto. Domingo de los Tsachilas</option>  
+                <option value="Esmeraldas">Esmeraldas</option>  
+                <option value="Manabí">Manabí</option>  
+                <option value="Guayas">Guayas</option>  
+                <option value="Los Ríos">Los Ríos</option>  
+                <option value="El Oro">El Oro</option>  
+                <option value="Santa Elena">Santa Elena</option>  
+                <option value="Sucumbíos">Sucumbíos</option>  
+                <option value="Napo">Napo</option>  
+                <option value="Pastaza">Pastaza</option>  
+                <option value="Orellana">Orellana</option>  
+                <option value="Morona Santiago">Morona Santiago</option>  
+                <option value="Zamora Chinchipe">Zamora Chinchipe</option>  
+                <option value="Galápagos">Galápagos</option>  
+                <option value="Antártida Ecuatoriana">Antártida Ecuatoriana</option>
+            </select>
+            <button id="miBoton" disabled>Enviar Datos</button>
+    </fieldset>
+</section>
+    <section class="box2" id="miDiv" style="display: none;">
+    <fieldset>
+        <h2>Información Confidencial</h2>
+            <label>Código Postal: <input type="text" name="first-name" required /></label>
+            <label>Referencia de la Dirección: <textarea></textarea>
+                <input type="submit" value="Guardar" />
+    </fieldset>
+    </section>  
+    </form>
+
+    <script src="../FormRegister/js/main.js></script>
+</body>
+</html>
