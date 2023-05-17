@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action='#' name="FormProduct">
+    <section class="box1">
+    <fieldset>
+        <h2>Datos Básicos</h2>
+            <label>Nombre del Producto: <input type="text" name="first-name" required /></label>
+            <label>Descripción: <textarea></textarea>
+            <label>Foto: <input type="file" name="file" /></label>
+            <input type="checkbox" id="check">Añadir información confidencial.
+    </fieldset>
+</section>
+    <section class="box2">
+    <fieldset>
+        <h2>Datos Económicos</h2>
+            <label>Precio: <input type="number" name="first-name" required /></label>
+            <label>Impuestos: <select name="" id="">
+                <option value="1" >1%</option>  
+                <option value="2">2%</option>  
+                <option value="3">3%</option>  
+                <option value="4">4%</option>  
+                <option value="5">5%</option>  
+                <option value="6">6%</option>  
+                <option value="7">7%</option>  
+                <option value="8">8%</option>  
+                <option value="9">9%</option>  
+                <option value="10">10%</option>  
+                <option value="11">11%</option>  
+                <option value="12" selected="selected">12%</option>  
+                <option value="13">13%</option>  
+                <option value="14">14%</option>  
+                <option value="15">15%</option>  
+            </select>
+            <label>Promoción:</label>
+                <input type="radio" name="promocion" id="">Ninguno
+                <input type="radio" name="promocion" id="">Transporte Gratuito
+                <input type="radio" name="promocion" id="">Descuento 5%
+    </fieldset>
+    <fieldset>
+        <input type="submit" value="Guardar cambios" />
+        <input type="submit" value="Borrar los datos introducidos" />
+    </fieldset>
+    </section>  
+    </form>
+</body>
+</html>

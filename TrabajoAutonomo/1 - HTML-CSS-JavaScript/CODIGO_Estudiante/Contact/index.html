@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="contenedor-formularios">
+        <div id="registrarse">
+            <h1>Contacto</h1>
+            <form name="FormContacto" onsubmit="return validar()">
+                <div class="contenedor-input">
+                    <label>
+                        Correo Electrónico<span class=>*</span>
+                    </label>
+                    <br>
+                    <input type="text" name="nom" id="correo" placeholder="usuario@mail.com" autocomplete="off" required>
+                </div>
+                <div class="contenedor-input">
+                    <label>
+                        Fecha de nacimiento<span class=>*</span>
+                    </label>
+                    <br>
+                    <input type="date" name="nom" placeholder="dd/mm/aaaa" autocomplete="off" required>
+                </div>
+                <div class="contenedor-input">
+                    <label>
+                        Teléfono<span class=>*</span>
+                    </label>
+                    <br>
+                    <input type="text" id="telefono" name="nom" placeholder="Telefono" autocomplete="off" required>
+                </div>
+                <input type="button" id="button-enviar" class="button" onclick="enviarFormulario()" value="Enviar" />
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
